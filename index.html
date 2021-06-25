@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/logofavicon.jpg"
+      type="image/x-icon"
+      style="border-radius: 50%"
+    />
+    <title>Barber Shop - Lakshya Dhiman</title>
+  </head>
+  <body>
+    <header>
+      <section id="home">
+        <div class="top">
+          <a href="index.html">
+            <img src="img/logo1.png" alt="Logo" class="logo1"
+          /></a>
+        </div>
+
+        <div id="home-content">
+          <h1 id="hair-studio">Hair Studio</h1>
+          <p id="slogon">Style Your Hair Is Style Your Life</p>
+          <div class="home-btn">
+            <button type="button">Find Out</button>
+            <button type="button">Read More</button>
+          </div>
+        </div>
+      </section>
+    </header>
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Meet Us</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div id="menubtn">
+      <img src="img/menu.png" alt="" class="menu" />
+      <img style="display: none" src="img/close.png" alt="" class="close" />
+    </div>
+
+    
+    <script>
+      let menubtn = document.getElementById("menubtn");
+      let sideNav = document.getElementById("sideNav");
+      let menu = document.querySelector(".menu");
+      let closeicons = document.querySelector(".close");
+      menu.addEventListener("click", sidenavclose);
+      closeicons.addEventListener("click", nanaji);
+      function nanaji(){
+        sideNav.style.width = "0";
+        menu.style.display = "block";
+        closeicons.style.display = "none"
+      }
+      function sidenavclose() {
+        sideNav.style.width = "250px";
+        menu.style.display = "none";
+        closeicons.style.display = "block"
+      }
+    </script>
+  </body>
+</html>
